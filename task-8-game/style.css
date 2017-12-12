@@ -1,0 +1,17 @@
+.wrap {
+	width: 250px;
+	height: 250px;
+	margin: 5% auto;
+	}
+.first, .second, .third, .fourth {
+	border: 1px solid #ccc;
+	width: 100px;
+	height: 100px;
+	display: inline-block;	
+}
+
+
+
+
+
+

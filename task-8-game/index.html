@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<div class = "wrap">
+		<div class = "first" id = "rectangle"></div>
+		<div class = "second" id = "rectangle"></div>
+		<div class = "third" id = "rectangle"></div>
+		<div class = "fourth" id = "rectangle"></div>
+	</div>
+
+	<script type="text/javascript">
+var a, b, c, d;
+
+function getZeroOrOne() {
+	return Math.round(Math.random() * 1);
+}
+
+var firstblock = function(event) {
+  a = getZeroOrOne();
+
+  
+  if (a == 0) {
+    var fgr = fcolor.style.backgroundColor = "green";
+  }
+  if (a == 1) {
+    var fre = fcolor.style.backgroundColor = "red";
+  }
+
+  var none12 = setTimeout(function() {
+	if (a == 0 && b == 0 || a == 1 && b == 1) {
+		var fbl = fcolor.style.display = "none";
+        var sbl = scolor.style.display = "none";
+	}
+  }, 2000);
+  var none13 = setTimeout(function() {
+	if (a == 0 && c == 0 || a == 1 && c == 1) {
+		var fbl = fcolor.style.display = "none";
+        var tbl = tcolor.style.display = "none";
+	}
+  }, 2000);
+
+var none14 = setTimeout(function() {
+	if (a == 0 && d == 0 || a == 1 && d == 1) {
+		var fbl = fcolor.style.display = "none";
+        var fobl = focolor.style.display = "none";
+	}
+  }, 2000);
+//var none23 = setTimeout(function() {
+	//if (b == 0 && c == 0 || b == 1 && c == 1) {
+		//var sbl = scolor.style.display = "none";
+        //var tbl = tcolor.style.display = "none";
+	//}
+  //}, 2000);
+//var none24 = setTimeout(function() {
+	//if (b == 0 && d == 0 || b == 1 && d == 1) {
+		//var sbl = scolor.style.display = "none";
+        //var fobl = focolor.style.display = "none";
+	//}
+  //}, 2000);
+
+}
+
+  //var blackcolor = setTimeout(function() {
+    //if (a == 0 && b == 0 || a == 1 && b == 1 || a == 0 && c == 0 || a == 1 && c == 1 || a == 0 && d == 0 || a == 1 && d == 1 || b == 0 && c == 0 || b == 1 && c == 1 || b == 0 && d == 0 || b == 1 && d == 1 || d == 0 && c == 0 || d == 1 && c == 1) {
+      //var fbl = fcolor.style.display = "none";
+      //var sbl = scolor.style.display = "none";
+      //var tbl = tcolor.style.display = "none";
+      //var fobl = focolor.style.display = "none";
+    //}
+  //}, 2000);
+
+
+//var noneone = setTimeout(function() {
+	//if (a == 0 && b == 0 || a == 1 && b == 1) {
+		//var fbl = fcolor.style.display = "none";
+        //var sbl = scolor.style.display = "none";
+	//}
+  //}, 2000);
+
+
+//var nonetwo = setTimeout(function() {
+	//if (a == 0 && c == 0 || a == 1 && c == 1) {
+		//var fbl = fcolor.style.display = "none";
+        //var tbl = tcolor.style.display = "none";
+	//}
+  //}, 2000);
+
+
+//var nonethree = setTimeout(function() {
+	//if (a == 0 && d == 0 || a == 1 && d == 1) {
+		//var fbl = fcolor.style.display = "none";
+        //var fobl = focolor.style.display = "none";
+	//}
+  //}, 2000);
+	
+
+//var nonefour = setTimeout(function() {
+	//if (b == 0 && c == 0 || b == 1 && c == 1) {
+		//var sbl = scolor.style.display = "none";
+        //var tbl = tcolor.style.display = "none";
+	//}
+  //}, 2000);
+	
+
+//var nonefive = setTimeout(function() {
+	//if (b == 0 && d == 0 || b == 1 && d == 1) {
+		//var sbl = scolor.style.display = "none";
+        //var fobl = focolor.style.display = "none";
+	//}
+  //}, 2000);
+	
+
+//var nonesix = setTimeout(function() {
+	//if (c == 0 && d == 0 || c == 1 && d == 1) {
+		//var tbl = tcolor.style.display = "none";
+        //var fobl = focolor.style.display = "none";
+	//}
+  //}, 2000);
+
+
+
+
+
+var secondblock = function(event) {
+  b = getZeroOrOne();
+
+  
+  if (b == 0) {
+    var sgr = scolor.style.backgroundColor = "green";
+  }
+  if (b == 1) {
+    var sre = scolor.style.backgroundColor = "red";
+  }
+var none23 = setTimeout(function() {
+	if (b == 0 && c == 0 || b == 1 && c == 1) {
+		var sbl = scolor.style.display = "none";
+        var tbl = tcolor.style.display = "none";
+	}
+  }, 2000);
+var none24 = setTimeout(function() {
+	if (b == 0 && d == 0 || b == 1 && d == 1) {
+		var sbl = scolor.style.display = "none";
+        var fobl = focolor.style.display = "none";
+	}
+  }, 2000);
+ 
+}
+
+
+var thirdblock = function(event) {
+c = getZeroOrOne();
+
+	if (c == 0) {
+		var tgr = document.querySelector('.third').style.backgroundColor = "green";
+}
+	if (c == 1) {
+		var tre = document.querySelector('.third').style.backgroundColor = "red";
+}
+
+var none34 = setTimeout(function() {
+	if (c == 0 && d == 0 || c == 1 && d == 1) {
+		var tbl = tcolor.style.display = "none";
+        var fobl = focolor.style.display = "none";
+	}
+  }, 2000);
+}
+
+var fourthblock = function(event) {
+d = getZeroOrOne();
+	if (d == 0) {
+		var fogr = document.querySelector('.fourth').style.backgroundColor = "green";
+}
+	if (d == 1) {
+		var fore = document.querySelector('.fourth').style.backgroundColor = "red";
+}
+}
+
+//var blackcolor = setTimeout(function() {
+	//if(a == 0 && b == 0) {
+		//var fbl = document.querySelector('.first').style.backgroundColor = "black";
+		//var sbl = document.querySelector('.second').style.backgroundColor = "black";
+	//}
+//}, 2000);
+
+var fcolor = document.querySelector('.first');
+fcolor.addEventListener('click', firstblock, false);
+
+var scolor = document.querySelector('.second');
+scolor.addEventListener('click', secondblock , false);
+
+var tcolor = document.querySelector('.third');
+tcolor.addEventListener('click', thirdblock, false);
+
+var focolor = document.querySelector('.fourth');
+focolor.addEventListener('click', fourthblock, false);
+
+
+//var wcolor = document.querySelector('.first');
+//wcolor.addEventListener('click', w, false);
+
+
+
+
+	</script>
+</body>
+</html>
